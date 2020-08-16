@@ -1,0 +1,35 @@
+{
+  "devDependencies": {
+    "@babel/preset-env": "^7.7.7",
+    "@babel/register": "^7.7.7",
+    "@symfony/webpack-encore": "^0.28.0",
+    "core-js": "^3.0.0",
+    "cross-env": "^6.0.3",
+    "mocha": "^7.0.0",
+    "regenerator-runtime": "^0.13.2",
+    "stylus": "^0.54.7",
+    "stylus-loader": "^3.0.2",
+    "webpack-notifier": "^1.6.0"
+  },
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "dev-server": "encore dev-server",
+    "dev": "encore dev",
+    "watch": "encore dev --watch",
+    "build": "encore production --progress",
+    "test": "cross-env NODE_PATH='./assets/js' mocha ./tests/js/*.js --require @babel/register"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "bootstrap-datepicker": "^1.9.0",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.16.0"
+  }
+}
